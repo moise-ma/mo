@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta htt-equiv="X-UA-content=ie=edge">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="moisee.css">
+</head>
+<body>
+<div class="full-page">
+    <div class="navbar">
+<div>
+<a href="https://www.youtube.com/shorts/14joG8_vEYI">2M<a>
+</div>
+       
+        <nav>
+            <ul id='menuitems'>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><button class="loginbtn " onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">Login/signup</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+       <div id='login-form'class='login-page'>
+        <div class="form-box">
+            <div class="button-box">
+            <div id="btn"></div>
+            <button type="button"onclick="login()"class="toggle-btn">login in</button>
+            <button type="button"onclick="register()"class="toggle-btn">signup</button>
+        </div>
+        
+        <form id="login" class="input-group-login">
+              <input type="text" class="input-field" placeholder="email/username" required>
+            <input type="password" class="input-field" placeholder="password" required>
+<input type="checkbox"class="check-box"><span>remember password</span>
+<button type="submit"class="submit-btn">login</button>
+        </form>
+        <form id="register" class="input-group-register">
+            <input type="text"class="input-field"placeholder="first name"required>
+            <input type="text"class="input-field"placeholder="last name"required>
+            <input type="email"class="input-field"placeholder="email id"required>
+            <input type="password"class="input-field"placeholder="enter passward"required>
+            <input type="password"class="input-field"placeholder="confirm passward"required>
+            <input type="checkbox"class="check-box"><span>i agree to the terms and condition</span>
+            <button type="submit"class="submit-btn">signup</button>
+            
+
+
+        </form>
+    </div>
+       </div>
+    </div>
+
+
+    <script>
+        var x=document.getElementById('login');
+        var y=document.getElementById('register');
+        var z=document.getElementById('btn');
+        function register()
+        {
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login()
+        {
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0px'; 
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event)
+        {
+            if (event.target == modal)
+        {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>

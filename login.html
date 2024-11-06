@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+ <!-- Header Section -->
+ <header>
+    
+    <nav>
+        <div class="logo">2M</div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact us</a>
+        <a href="blogs.html">Blog</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">signup</a>
+    </nav>
+</header>
+    <!-- Login Page -->
+    <section id="login">
+        <h1>Login</h1>
+        <form action="login.php" method="post">
+            <label for="email">Email/Username</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            
+            <button type="submit">Login</button>
+            
+            <div class="links">
+                <a href="#forgot-password">Forgot Password?</a>
+                <p>Don’t have an account? <a href="#signup">Sign Up</a></p>
+            </div>
+        </form>
+        <!-- Placeholder for Error Message -->
+        <p class="error-message">Invalid email or password. Please try again.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+   
+}
+
+header, footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    justify-content: space-between;
+    line-height: 1.6;
+    display: flex;
+
+}
+
+header nav, footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+} 
+header nav, footer nav a, nav a:hover{
+color: orange;
+}
+
+header nav a, footer nav a, .social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Blog List Page */
+#blog-list {
+    text-align: center;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-bar, #category-filter {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.blog-post {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.post-info h2 {
+    margin: 0;
+}
+
+.description {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.date {
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Single Blog Page */
+.blog-content {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.author-info {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+#comments-section {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+#comments-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comments-section textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+footer {
+    padding: 30px;
+}
+footer a:hover
+{
+    color: orange;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
